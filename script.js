@@ -1,4 +1,7 @@
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -20,5 +23,3 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
