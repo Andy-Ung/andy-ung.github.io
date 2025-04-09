@@ -143,6 +143,7 @@
 </div>
   <script>
     const DROPDOWN = document.getElementById("drop-down");
+    const dfMessenger = document.querySelector('df-messenger-user-input'); 
 
     var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
@@ -199,7 +200,7 @@ for (i = 0; i < l; i++) {
     });
 }
 DROPDOWN.addEventListener('change', function(e) {
-  document.getElementsByTagName("df-messenger-user-input").value = DROPDOWN.value;
+  dfMessenger.value = DROPDOWN.value;
 });
 
     /* If the user clicks anywhere outside the select box,
