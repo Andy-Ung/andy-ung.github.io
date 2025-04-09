@@ -201,6 +201,7 @@ for (i = 0; i < l; i++) {
 }
 DROPDOWN.addEventListener('change', function(e) {
   dfMessenger.sendQuery(DROPDOWN.value);
+  dfMessenger.renderCustomText('Custom text', true);
 });
 
     /* If the user clicks anywhere outside the select box,
