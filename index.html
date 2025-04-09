@@ -15,7 +15,7 @@
   <div class="row">
     <div class = 'column side'> 
       <p>Hello Test</p>
-      <div class="custom-select" style="width:200px;">
+      <div class="custom-select" id = 'drop-down' style="width:200px;">
         <select>
           <option value="0">Select car:</option>
           <option value="1">Audi</option>
@@ -142,6 +142,8 @@
   </div>
 </div>
   <script>
+    const DROPDOWN = document.getElementById("drop-down");
+
     var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
@@ -196,6 +198,10 @@ for (i = 0; i < l; i++) {
       this.classList.toggle("select-arrow-active");
     });
 }
+DROPDOWN.addEventListener('change', function(e) {
+  document.getElementsByTagName("df-messenger-user-input").value = DROPDOWN.value;
+});
+
     /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
