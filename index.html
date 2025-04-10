@@ -201,8 +201,10 @@ for (i = 0; i < l; i++) {
 }
 DROPDOWN.addEventListener('change', function(e) {
   //dfMessenger.sendQuery(DROPDOWN.value);
-  dfMessenger.sendQuery("DROPDOWN.value");
+  //dfMessenger.sendQuery("DROPDOWN.value");
   //dfMessenger.renderCustomText('Custom text', true);
+  dfMessenger.renderCustomText('Describe shipping costs.', false);
+dfMessenger.sendQuery('Describe shipping costs.');
 });
 
     /* If the user clicks anywhere outside the select box,
@@ -213,8 +215,8 @@ document.getElementById("defaultOpen").click();
 
 //dfMessenger.renderCustomText('Custom text', true);
 //dfMessenger.sendQuery("DROPDOWN.value");
-dfMessenger.renderCustomText('Describe shipping costs.', false);
-dfMessenger.sendQuery('Describe shipping costs.');
+//dfMessenger.renderCustomText('Describe shipping costs.', false);
+//dfMessenger.sendQuery('Describe shipping costs.');
   </script>
 </body>
 </html>
