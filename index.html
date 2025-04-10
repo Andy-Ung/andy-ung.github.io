@@ -30,27 +30,27 @@
       <option value="12">Volvo</option>
     </select>
     <df-messenger
-  project-id="true-velocity-453111-g8"
-  agent-id="75c43362-b6f9-4b02-ab1c-961c1a61d4da"
-  language-code="en"
-  max-query-length="-1">
-  <df-messenger-chat-bubble
-    chat-title="Canvas Chatbot 5">
-  </df-messenger-chat-bubble>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    --df-messenger-font-color: #000;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-chat-background: #f3f6fc;
-    --df-messenger-message-user-background: #d3e3fd;
-    --df-messenger-message-bot-background: #fff;
-    bottom: 16px;
-    right: 16px;
-  }
-</style>
+    project-id="true-velocity-453111-g8"
+    agent-id="75c43362-b6f9-4b02-ab1c-961c1a61d4da"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat
+      chat-title="Canvas Chatbot 5">
+    </df-messenger-chat>
+  </df-messenger>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
   </div>
 </div>
 </div>
@@ -127,6 +127,7 @@
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Aptos",sans-serif;'><strong><span style="font-size:16px;line-height:107%;">Q21: What if I have a question that is not covered here?</span></strong></p>
 <p><span style='font-size:16px;font-family:"Aptos",sans-serif;'>If your question is not listed in this FAQ, please contact the <u>Teaching Team</u> for assistance</span></p>
 </div>
+
   <script>
     const DROPDOWN = document.getElementById("drop-down");
     const dfMessenger = document.querySelector('df-messenger');
