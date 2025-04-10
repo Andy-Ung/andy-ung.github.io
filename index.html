@@ -203,8 +203,8 @@ DROPDOWN.addEventListener('change', function(e) {
   //dfMessenger.sendQuery(DROPDOWN.value);
   //dfMessenger.sendQuery("DROPDOWN.value");
   //dfMessenger.renderCustomText('Custom text', true);
-  dfMessenger.renderCustomText('Describe shipping costs.', false);
-dfMessenger.sendQuery('Describe shipping costs.');
+  dfMessenger.renderCustomText(DROPDOWN.value, false);
+  dfMessenger.sendQuery(DROPDOWN.value);
 });
 
     /* If the user clicks anywhere outside the select box,
